@@ -7,7 +7,7 @@ async function getData(){
         list.innerHTML = ""
         data.products.forEach(product => {
             const li = document.createElement("li");
-          li.textContent = ${product.title} - Rs${product.price}- ${product.category} - ${product.rating};
+          li.textContent = `${product.title} - Rs${product.price}- ${product.category} - ${product.rating}`;
           list.appendChild(li);
         });
     }
@@ -17,4 +17,3 @@ async function getData(){
 }
 
 getData();
-
